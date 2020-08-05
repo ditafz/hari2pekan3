@@ -19,5 +19,17 @@ Route::get('/index', 'HomeController@home');
 Route::get('/selamat-datang', 'AuthController@welcome');
 Route::get('/form-register', 'AuthController@formregister');
 
+Route::get('/master', function(){
+	return view('adminlte.master');
+});
+
+//tugas hari 3 pekan 3
+Route::get('/', function(){
+	return view('tugas.index');
+});
+
+Route::get('/data-tables', function(){
+	return view('tugas.data-tables');
+});
 
    
