@@ -58,14 +58,10 @@
 <!-- AdminLTE for demo purposes -->
 <script src="{{asset('adminlte/dist/js/demo.js')}}"></script>
 
+
 <!-- BUAT BAGIAN DATA TABLE -->
-<script src="{{asset('adminlte/plugins/datatables/jquery.dataTables.js')}}"></script>
-<script src="{{asset('adminlte/plugins/datatables-bs4/js/dataTables.bootstrap4.js')}}"></script>
-<script>
-  $(function () {
-    $("#example1").DataTable();
-  });
-</script>
+@stack('scripts')
+<!-- BUAT BAGIAN DATA TABLE -->
 
 </body>
 </html>
